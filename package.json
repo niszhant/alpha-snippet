@@ -1,0 +1,26 @@
+{
+  "name": "@nightendkumar/alpha-snippet",
+  "version": "1.0.0",
+  "description": "Used to test out experimental code snippets with low probability of working.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nightendkumar/alpha-snippet.git"
+  },
+  "keywords": [
+    "Test",
+    "Crazy"
+  ],
+  "author": "nightendkumar <nightendkumar@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nightendkumar/alpha-snippet/issues"
+  },
+  "homepage": "https://github.com/nightendkumar/alpha-snippet#readme",
+  "dependencies": {
+    "funding": "^1.0.9"
+  }
+}
