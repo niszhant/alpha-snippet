@@ -1,4 +1,6 @@
-const Emitter = require('./emitter');
+// const Emitter = require('./emitter');
+// OR
+const Emitter = require('events');
 
 const eventEmitter = new Emitter();
 
