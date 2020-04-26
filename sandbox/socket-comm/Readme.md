@@ -1,6 +1,6 @@
 1) To build docker image:
 
-docker run -p 49160:8080 -d <your username>/node-web-app .
+docker build -t <your username>/node-web-app .
 
 2) To create a container from the image:
 
@@ -8,6 +8,11 @@ docker run -p 49160:8081 -d <your username>/node-web-app
 
 -d = detached mode
 -p = port. From outside access, localhost:49160 , which will point to 8081 where node is running.
+
+For dockerised socket-io app, use same port :
+
+> docker run -p 8081:8081 -d niszhant/socket-io-impl
+
 
 Running your image with -d runs the container in detached mode, leaving the container running in the background. The -p flag redirects a public port to a private port inside the container. Run the image you previously built:
 
