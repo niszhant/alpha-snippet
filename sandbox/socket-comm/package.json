@@ -1,0 +1,45 @@
+{
+  "name": "socket-comm",
+  "version": "1.0.0",
+  "description": "trying out socket io npm package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "25042020-using-socket-io"
+  },
+  "keywords": [
+    "socket",
+    "typescript",
+    "messenger",
+    "docker",
+    "test"
+  ],
+  "author": "nightendkumar <nightendkumar@outlook.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/node": "^13.13.2",
+    "@types/socket.io": "^2.1.4",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "@typescript-eslint/parser": "^2.29.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "socket.io": "^2.3.0"
+  }
+}
