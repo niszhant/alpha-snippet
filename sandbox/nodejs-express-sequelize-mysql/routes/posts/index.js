@@ -28,12 +28,16 @@ router.post('/', (req, res, next) => {
     });
 });
 
-router.get('/:id', (req, res, next) => {
+// middleware usage
+router.use('/:id', (req, res, next) => {
     if (!req.params) {
-        res.status(400).send({
+        return res.status(400).send({
             message: "Post id cannot be empty."
         });
     }
+});
+
+router.get('/:id', (req, res, next) => {
     const postId = req.params.id;
     return postService.getById(postId).then(data => {
         res.status(200).send(data);
@@ -45,11 +49,6 @@ router.get('/:id', (req, res, next) => {
 });
 
 router.delete('/:id', (req, res, next) => {
-    if (!req.params) {
-        res.status(400).send({
-            message: "Post id cannot be empty."
-        });
-    }
     const postId = req.params.id;
     return postService.delete({ id: postId }).then(deletedObjectsCount => {
         res.status(200).send(deletedObjectsCount);

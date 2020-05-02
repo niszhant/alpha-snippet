@@ -7,7 +7,7 @@ const config = require('./config');
 const postRoutes = require('./routes/posts');
 
 const corsSettings = {
-    originL: "http://localhost:8081"
+    origin: "http://localhost:8081"
 };
 
 const server = express();
